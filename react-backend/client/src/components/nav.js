@@ -1,31 +1,42 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-import logo from './src/components/assets/CC_logo.png';
+import logo from './Assets/CC_logo.png';
 
-export default class nav extends React.Component {
+export default class Navigation extends React.Component {
+	constructor(props) {
+    super(props);
 
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: true
+    };
+  }
+
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
   render() {
     return (
       <div>
-        <nav className="navbar navbar-light bg-light">
-			<a className="navbar-brand" href="#">
-			<img src={require('./assets/CC_logo.png')} width="30" height="30" alt=""/>
-			{/*<img src='CC_logo.png' width="30" height="30" alt=""/>*/}
-			</a>
-			{/*<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span className="navbar-toggler-icon"></span>
-			</button>
-			<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div className="navbar-nav">
-				  <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-				  <a className="nav-item nav-link" href="#">Blog</a>
-				  <a className="nav-item nav-link" href="#">Projects</a>
-				  <a className="nav-item nav-link" href="#">Contact</a>
-				  <a className="nav-item nav-link" href="#">Projects</a>
-				</div>
-  </div>*/}
-		</nav>
+        <Navbar color="faded" light>
+          <NavbarBrand href="/" className="mr-auto">
+						<img src={logo} style = {{width:'3rem'}}/>
+					</NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/components/">Components</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
       </div>
     );
   }
