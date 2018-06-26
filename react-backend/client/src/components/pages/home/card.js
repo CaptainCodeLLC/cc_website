@@ -25,7 +25,7 @@ function SimpleMediaCard(props) {
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image=""
           title="Contemplative Reptile"
         />
         <CardContent>

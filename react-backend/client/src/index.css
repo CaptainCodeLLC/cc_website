@@ -5,16 +5,89 @@ body {
 }
 
 .landing-container{
-  background: #76b852;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  background: #52c234;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #569759ab, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #569759ab, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+h1 {
+  font-family:'Raleway', sans-serif !important;
+}
+ p{
+  font-family: 'Raleway', sans-serif!important;
+}
 #landing{
   
 }
 
-#header-landing-text{
-  color:#f7f7f7;
-  font-family: 'Shrikhand', cursive;
+.jumbotron-container{
+  background-color:transparent!important;
+}
+
+#navbar-toggler{
+  background-color:rgb(44, 44, 44,.88)!important;
+}
+
+.navbar-link{
+  color: #f2f2f2!important;
+}
+#navbar-brand-toggler{
+  color:#5bca57;
+  font-size: 2rem;
+}
+
+.navbar-toggler-icon{
+  color:white!important;
+}
+
+h1#jumbotron-text{
+  font-family: 'Galada', cursive!important;
+  color:#f2f2f2!important;
+  text-shadow: 3px 3.5px #000000;
+  
+}
+
+/* Solutions Page */
+@media only screen and (min-width: 750px){
+  .nav-container{
+    float:left;
+    width:20rem;
+    background: #5bca57;
+    position: relative;
+    margin-right:3rem;
+    border-radius:3%;
+  }
+
+  .global-solution-container{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+  }
+
+  #business_subsection{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .solution-header-text{
+  }
+}
+
+/* Project page */
+#project-blurb{
+  font-size:1.2rem;
+  width:20rem;
+  margin:auto;
+  outline-color: #000000;
+  outline-width: 5px;
+}
+
+@media only screen and (max-width: 750px){
+  .nav-container{
+    float:left;
+    margin-left:8rem;
+    position:absolute;
+    visibility: hidden;
+  }
 }
