@@ -5,7 +5,7 @@ export default class Solutions extends Component {
   render() {
     return (
       <div>
-        <h1>Our solutions</h1>
+        <h1 className = "page-header">Our Solutions</h1>
         <hr/>
      
         <div className= "global-solution-container">
@@ -18,13 +18,18 @@ export default class Solutions extends Component {
                         <NavLink href="#">Pricing</NavLink>
                     </Nav>
             </div>
-            <div className="content-container">
-            <h1 className="solution-header-text">Business Suite</h1> 
-                <div id="business_subsection">
-                    <VerticalCard/>
+            
+            <div className = "solution-page-content">
+                <h1 className="solution-header-text">Business Suite</h1> 
+           <div className = "container">
+            <div id="business_subsection">
+                    <VerticalCard title = "object1" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
                 </div>
             </div>
-    </div>
+            </div>
+        </div>
     </div>
     )
   }
