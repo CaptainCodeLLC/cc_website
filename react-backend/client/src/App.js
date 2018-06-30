@@ -3,7 +3,7 @@ import './App.css';
 
 import Nav from './components/nav';
 import Main from './components/main';
-
+import {Footer} from './components/global/footer';
 class App extends Component {
   render() {
     return (
@@ -11,6 +11,7 @@ class App extends Component {
         <Nav/>
 
         <Main id="landing"/>
+        <Footer/>
       </div>
     );
   }

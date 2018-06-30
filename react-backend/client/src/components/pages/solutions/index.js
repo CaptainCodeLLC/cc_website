@@ -24,8 +24,8 @@ export default class Solutions extends Component {
            <div className = "container">
             <div id="business_subsection">
                     <VerticalCard title = "object1" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
-                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
-                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {`400.20`}/>
+                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {`2002.00`}/>
                 </div>
             </div>
             </div>

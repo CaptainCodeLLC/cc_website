@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Form, FormGroup, Jumbotron,Label, Input,Row,Button} from 'reactstrap';
+import {Form, FormGroup, Jumbotron,Label,Footer, Input,Row,Button} from 'reactstrap';
 
 import ProjectGrid from './projectGrid';
 export default class Home extends Component {
@@ -25,6 +25,7 @@ export default class Home extends Component {
         </Form>
         </div>
         <ProjectGrid/>
+     
       </div>
     )
   }
