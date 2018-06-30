@@ -55,19 +55,18 @@ h1#jumbotron-text{
 
 /* Solutions Page */
 @media only screen and (min-width: 750px){
-  .nav-container{
+  #business-nav-container{
     float:left;
-    width:20rem;
     background: #5bca57;
-    position: relative;
-    margin-right:3rem;
+    position: fixed;
+    width: 15%;
+    top:auto;
     border-radius:3%;
-    height:100%;
     padding-bottom:10px;
   }
 
   .solution-page-content{
-    
+    margin:auto;
     text-align: left; 
     display: flex;
     flex-direction: column;
@@ -79,17 +78,35 @@ h1#jumbotron-text{
     align-content: space-between;
   }
 
+  .content-subsection{
+    margin:auto;
+    margin-top:4vh;
+    margin-bottom:4vh;
+    width:60vw;
+  } 
   #business_subsection{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin:auto;
-    margin-left:20rem;
-    
-
+  }
+  #home-personal-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between!important;
   }
 
+  
+ 
+  Input#first-name{
+    width:130px!important;
+    margin-bottom: 20px;
+  }
+  Input.pricing-input{
+    width:40%;
+    margin:auto;
+    text-align: center;
+  }
   .solution-header-text{
     width: 100%;
   }
