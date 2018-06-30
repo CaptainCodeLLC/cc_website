@@ -41,8 +41,8 @@ export default class VerticalCard extends Component {
         <hr/>
         
         </div>
-        <div className="card-pricing">${this.props.pricing}
-        </div>
+        {/* <div className="card-pricing">${this.props.pricing}
+        </div> */}
           <div className="button-container">
            <Button toggle={this.toggle} color = "success">Contact us</Button> <br/>
             <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
