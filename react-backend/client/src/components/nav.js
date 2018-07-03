@@ -22,7 +22,7 @@ export default class Navigation extends React.Component {
       <div>
         <Navbar color="light" id = "navbar-toggler"light expand="md">
         <NavbarBrand href="/" className="mr-auto" id = "navbar-brand-toggler">
-						<img src={logo} style = {{width:'2.5rem', float:'left'}}/>
+						<img src={logo} alt ='' style = {{width:'2.5rem', float:'left'}}/>
            <span style = {{fontFamily:'Raleway', marginTop:-4, marginLeft:'4px', float:'left'}}>{'Captain Code'}</span>
 					</NavbarBrand>
           
