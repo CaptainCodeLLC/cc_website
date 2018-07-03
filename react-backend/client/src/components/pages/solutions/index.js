@@ -39,7 +39,6 @@ export default class Solutions extends Component {
             <div className = "solution-page-content">
             <div id="business_subsection"></div>
                 <h1 className="solution-header-text">Business Suite</h1> 
-<<<<<<< HEAD
             <Container>
                 <Row>
                     <Col>
@@ -57,15 +56,6 @@ export default class Solutions extends Component {
  
                 </Row>
            </Container>
-=======
-           <div className = "content-subsection">
-            <div id="business_subsection">
-                    <VerticalCard title = "object1" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
-                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {`400.20`}/>
-                    <VerticalCard title = "object2" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {`2002.00`}/>
-                </div>
-            </div>
->>>>>>> cca12d08bbe8097d7f45f9ff56eaf3a4ab11e20b
 
             <div className="content-subsection">
                 <div id = "education_subsection">

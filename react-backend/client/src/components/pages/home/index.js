@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import {Form, FormGroup, Jumbotron, Input,Button} from 'reactstrap';
-=======
-import {Form, FormGroup, Jumbotron,Label,Footer, Input,Row,Button} from 'reactstrap';
->>>>>>> cca12d08bbe8097d7f45f9ff56eaf3a4ab11e20b
 
 import ProjectGrid from './projectGrid';
 export default class Home extends Component {
