@@ -97,6 +97,13 @@ h1#jumbotron-text{
     position: relative;
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
+    justify-content: space-between;
+    
+    margin-top:20px;
+    width:100%;
+    margin-left:auto;
+=======
     justify-content: space-around;
 
   }
@@ -104,8 +111,13 @@ h1#jumbotron-text{
   #products{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     justify-content: space-around!important;
     width:60vw;
+=======
+    justify-content: space-between!important;
+>>>>>>> 3bfaa583ce5048f33d247f246d72ceb175ca7512
+>>>>>>> cca12d08bbe8097d7f45f9ff56eaf3a4ab11e20b
   }
 
  
@@ -149,7 +161,7 @@ a.nav-link{
 }
 .button-container{
   text-align: center;
-  margin-top: 5px;
+  margin-top : 5px;
 }
 .card-title{
   font-size:30px;

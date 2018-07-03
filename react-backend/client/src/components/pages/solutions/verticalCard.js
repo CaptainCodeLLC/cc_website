@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
-import {Button} from 'reactstrap';
+import {Button,ButtonDropdown, DropdownToggle, DropdownItem, DropdownMenu} from 'reactstrap';
 export default class VerticalCard extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
   render() {
 
     
@@ -30,7 +44,19 @@ export default class VerticalCard extends Component {
         {/* <div className="card-pricing">${this.props.pricing}
         </div> */}
           <div className="button-container">
-           <Button color = "success">Contact us</Button>  <Button color = "primary">More </Button>
+           <Button toggle={this.toggle} color = "success">Contact us</Button> <br/>
+            <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+              <DropdownToggle caret>
+              More Information
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem header>Header</DropdownItem>
+          <DropdownItem disabled>Action</DropdownItem>
+          <DropdownItem>Another Action</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Another Action</DropdownItem>
+        </DropdownMenu>
+      </ButtonDropdown>
            </div>
         </div>
     )
