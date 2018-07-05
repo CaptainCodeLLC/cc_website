@@ -39,28 +39,14 @@ export default class Navigation extends React.Component {
                 <NavLink className = "navbar-link" href="/research">Research</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className = "navbar-link" href="/education">About</NavLink>
+                <NavLink className = "navbar-link" href="/about">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className = "navbar-link" href="https://youtube.com/">Education</NavLink>
+                <NavLink className = "navbar-link" href="/education">Education</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className = "navbar-link" nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink className = "navbar-link" href="/contact">Contact</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+Main#landing{
+  min-height: 100vh!important;
+}
 
 .landing-container{
   background: #52c234;  /* fallback for old browsers */
@@ -131,7 +134,8 @@ a.nav-link {
 }
 
 .nav-link:hover{
-  border-bottom: 1px solid grey;
+
+  border-bottom: .5px solid grey;
 }
 a.nav-link{
   padding:0px;
@@ -141,7 +145,6 @@ a.nav-link{
 /* Vertical Card Styling */
 
 .vertical-card{
-  /* padding: 12px; */
   border-radius: 4%;
   margin-right: 40px;
   height:100%;
@@ -190,4 +193,18 @@ a.nav-link{
     position:absolute;
     visibility: hidden;
   }
+}
+
+/* Contact page */
+textarea{
+  height:250px!important;
+}
+#contact-page-container{
+  margin:auto;
+}
+#example_name{
+  text-align: center;
+}
+textarea#contact-body{
+  text-align: center;
 }
