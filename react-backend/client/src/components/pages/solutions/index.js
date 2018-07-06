@@ -26,7 +26,7 @@ export default class Solutions extends Component {
         </Container>
         <hr/>
         
-        <div className= "global-solution-container">
+      
             <Container style = {{margin: "auto"}}>
                 <Row>
                     <Input id = 'search' placeHolder = 'Search'/>
@@ -35,22 +35,21 @@ export default class Solutions extends Component {
                     <Button color="success" style = {{margin:'auto', marginTop:'1vw'}}>Send</Button>
                 </Row>
             </Container>
-            
-            <div className = "solution-page-content">
-            <div id="business_subsection"></div>
-                <h1 className="solution-header-text">Business Suite</h1> 
-            <Container>
+          
+            <Container className>
+                
+            <h1 className="solution-header-text">Business Suite</h1> 
                 <Row>
-                    <Col>
-                        <VerticalCard title = "object1" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                    <Col lg='4'>
+                        <VerticalCard title = "object1" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
                     </Col> 
                     
-                    <Col>
-                        <VerticalCard title = "object1" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                    <Col lg='4'>
+                        <VerticalCard title = "object2" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
                     </Col>    
                     
-                    <Col>
-                        <VerticalCard title = "object1" description = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                    <Col lg='4'>
+                        <VerticalCard title = "object3" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
                     </Col>       
             
  
@@ -119,8 +118,7 @@ export default class Solutions extends Component {
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
     )
   }
 }

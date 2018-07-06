@@ -2,8 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  min-height: 100vh;
 }
-Main#landing{
+.App {
+  text-align: center;
+}
+main{
   min-height: 100vh!important;
 }
 
@@ -18,9 +22,6 @@ h1 {
 }
  p{
   font-family: 'Raleway', sans-serif!important;
-}
-#landing{
-  
 }
 
 .jumbotron-container{
@@ -124,9 +125,7 @@ h1#jumbotron-text{
   .contact-grid{
     width:40%;
     
-  }
-
-  
+  }  
 }
 
 a.nav-link {
@@ -134,7 +133,6 @@ a.nav-link {
 }
 
 .nav-link:hover{
-
   border-bottom: .5px solid grey;
 }
 a.nav-link{
@@ -144,13 +142,6 @@ a.nav-link{
 
 /* Vertical Card Styling */
 
-.vertical-card{
-  border-radius: 4%;
-  margin-right: 40px;
-  height:100%;
-  
-  width:15rem;
-}
 .button-container{
   text-align: center;
   margin-top : 5px;
@@ -172,10 +163,7 @@ a.nav-link{
   margin:10px;
   font-family: 'Raleway', sans-serif!important;
 }
-.card-icon{
-  width:15rem;
-  height:20rem;
-}
+
 
 /* Project page */
 #project-blurb{
@@ -208,3 +196,46 @@ textarea{
 textarea#contact-body{
   text-align: center;
 }
+
+/* Education Page */
+
+/* Footer */
+#footer-container{
+  background-color: #464646;
+  height:100%;
+}
+
+.header-text{
+  margin-top:10px;
+  font-size:22px;
+  color:#5bca57!important;
+}
+
+.description-text{
+  color:white!important;
+  margin-bottom:1px;
+  font-size:14px;
+}
+
+.footer-nav-link{
+  color:white!important;
+}
+
+a.footer-nav-link:hover{
+  color:#5bca57;
+  border:none!important;
+}
+
+#footer-business-container{
+  text-align: center;
+}
+
+#footer-email-newsletter{
+  color:white;
+}
+
+input#footer-email-input{
+  margin:auto;
+  radius:60%!important;
+}
+

@@ -5,10 +5,10 @@ export default class ProjectGrid extends Component {
   render() {
     return (
       <div className = "container">
-         <Row>
-          <Col s="3"><Card/></Col>
-          <Col s="3"><Card/></Col>
-          <Col s="3"><Card/></Col>
+         <Row style= {{margin:'auto'}}>
+            <Col xs="12" sm = '6' md = '6'lg = '4'><Card/></Col>
+            <Col xs ="12" sm = '6' lg = '4'><Card/></Col>
+            <Col xs="12" sm = '6' lg = '4'><Card/></Col>
         </Row>
       </div>
     )

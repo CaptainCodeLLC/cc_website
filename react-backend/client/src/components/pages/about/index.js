@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Logo from './about_svg.svg'
+
+
 export default class About extends Component {
   render() {
     return (

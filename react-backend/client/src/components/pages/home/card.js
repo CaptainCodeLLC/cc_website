@@ -46,6 +46,7 @@ function SimpleMediaCard(props) {
           </Button>
         </CardActions>
       </Card>
+      <br/>
     </div>
   );
 }
