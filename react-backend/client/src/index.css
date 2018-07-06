@@ -84,6 +84,7 @@ h1#jumbotron-text{
   }
  
  
+ 
   .global-solution-container{
     display: flex;
     flex-direction: column;
@@ -95,15 +96,18 @@ h1#jumbotron-text{
     margin:auto;
     margin-top:4vh;
     margin-bottom:4vh;
-    width:60vw;
-  } 
+    width:60vw
+  }
+
+  .solution-header-text{
+    text-align: left;
+    font-size: 3rem;
+    padding:20px 0px 20px 0px;
+  }
   #business_subsection{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-around;
-
+    margin-top:20px;
+    background-color: #464644;;
+    width:98vw;
   }
 
   #products{
@@ -120,7 +124,8 @@ h1#jumbotron-text{
   }
  
   .solution-header-text{
-    width: 100%;
+
+    color:white;
   }
   .contact-grid{
     width:40%;

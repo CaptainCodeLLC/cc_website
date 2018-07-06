@@ -52,7 +52,7 @@ class ModalExample extends React.Component {
           </ModalBody>
           <ModalFooter>
             <Button color="success" onClick={this.toggle}>Send</Button>{' '}
-            <Button color="primary" onClick={this.toggle}>Cancel</Button>
+            <Button color="danger" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>

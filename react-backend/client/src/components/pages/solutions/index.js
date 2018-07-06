@@ -36,7 +36,8 @@ export default class Solutions extends Component {
                 </Row>
             </Container>
           
-            <Container className>
+          <div id = "business_subsection" >
+            <Container id = 'business_subsection' >
                 
             <h1 className="solution-header-text">Business Suite</h1> 
                 <Row>
@@ -50,11 +51,11 @@ export default class Solutions extends Component {
                     
                     <Col lg='4'>
                         <VerticalCard title = "object3" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
-                    </Col>       
-            
- 
+             
+                    </Col>
                 </Row>
            </Container>
+           </div>
 
             <div className="content-subsection">
                 <div id = "education_subsection">

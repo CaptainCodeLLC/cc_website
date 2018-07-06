@@ -29,7 +29,7 @@ export default class Contact extends Component {
                              <Input type="email" name="email" id="example_name" placeholder="+1 (555) 555-5555" />
                         </FormGroup>
                         <FormGroup>
-                            <Label for="exampleText">Tell us what's happening.</Label>
+                            <Label for="exampleText">Tell us what's happening</Label>
                             <Input type="textarea" placeholder = "What's on your mind?*" name="text" id="exampleText" />
                         </FormGroup>
                     </Form>

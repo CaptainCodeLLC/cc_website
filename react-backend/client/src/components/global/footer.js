@@ -40,7 +40,7 @@ class Footer extends Component {
                 </Row>
                 <Row>
                     <Col style = {{margin:'auto'}} lg ='5' xs = '10'>,
-                        <Input style = {{textAlign: 'center'}} placeholder = "your awesome email"></Input>
+                        <Input style = {{textAlign: 'center', borderRadius:50}} placeholder = "Your awesome email"></Input>
                     </Col>
                 </Row>
                 <br/>
