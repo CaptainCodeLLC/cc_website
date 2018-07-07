@@ -10,7 +10,7 @@ export default class Home extends Component {
       
         <Jumbotron className = "jumbotron-container">
             <h1 id= "jumbotron-text" className="display-2">Build. Teach. Inspire!</h1>
-            <p className="lead">We believe in building scalable and long-lasting software solutions focused on transparency and security. </p>
+            <p className="lead">We build scalable and long-lasting software solutions focused on transparency and security. </p>
             <hr className="my-2" />
             <p>If you would like to hear about what we are up to, including special offers and free workshops, drop your email below <span role = 'img' aria-label = "sunglasses-emoji">😎</span></p>
             <FormGroup>
