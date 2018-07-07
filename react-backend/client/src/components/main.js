@@ -8,7 +8,8 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Solutions from './pages/solutions';
 import Education from './pages/education';
-import Contact from './pages/contact'
+import Contact from './pages/contact';
+import Research from './pages/research';
 
 const Main = () => (
     <main>
@@ -19,6 +20,7 @@ const Main = () => (
             <Route exact path = "/projects" component = {Projects}/>
             <Route exact path = "/education" component = {Education}/>
             <Route exact path = "/contact" component = {Contact}/>
+            <Route exact path = "/research" component = {Research}/>
         </Switch>
     </main>
 )

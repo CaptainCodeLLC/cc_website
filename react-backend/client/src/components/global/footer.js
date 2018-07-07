@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import{Container, Row, Col,Input} from 'reactstrap';
+
 class Footer extends Component {
     render() {
         return (
@@ -24,7 +25,7 @@ class Footer extends Component {
                     </Col>
                     <Col  className = "footer-subgroup-outline" xs = "6" md ="3">
                         <h1 className = 'header-text'>Press</h1>
-                        <p className = "description-text" className = "description-text">Some info</p>
+                        <p className = "description-text">Some info</p>
                     </Col>
                     <Col className = "footer-subgroup-outline" xs = "6" md ="3">
                         <h1 className = 'header-text'>Careers</h1>

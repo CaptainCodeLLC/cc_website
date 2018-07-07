@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import {Container, Row, Col} from 'reactstrap';
-import VerticalCard from './verticalCard';
+
 import ProjectCol from './projectCol';
 
-import {HorizontalCard} from './horizontalCard';
+
 
 export default class Projects extends Component {
   render() {
