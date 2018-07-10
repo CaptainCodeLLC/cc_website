@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({
 
 //TEST API Call
 app.get('/api/hello', (req, res) => {
+  console.log("TESTING");
   res.send({
     express: 'Hi There From Express Server.js'
   });
@@ -38,7 +39,7 @@ require('./routes/userRoutes')(app);
  ********************/
 app.listen(port, (err) => {
   if (err) return console.log(`ERROR port ${port}`);
-  console.log(`Listening for requests on port ${port}`);
+  console.log(`Listening for Captain Code requests on port ${port}`);
 });
 
 /********************

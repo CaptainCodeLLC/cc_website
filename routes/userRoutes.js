@@ -16,10 +16,10 @@ module.exports = (app) => {
 
     newUser.save()
       .then(user => {
-        res.send("user saved to the database");
+        res.send("user saved to Captain Code database");
       })
       .catch(err => {
-        res.status(400).send("unable to save to the database");
+        res.status(400).send("unable to save to Captain Code database");
       });
   });
 }
