@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const User = mongoose.model('users');
+const User = mongoose.model('Users');
 
 module.exports = (app) => {
 
@@ -19,7 +19,7 @@ module.exports = (app) => {
         res.send("user saved to Captain Code database");
       })
       .catch(err => {
-        res.status(400).send("unable to save to Captain Code database");
+        res.json({"unable to save to Captain Code database": err});
       });
   });
 }
