@@ -1,14 +1,22 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "description": "Frontend React App",
   "private": true,
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
     "@material-ui/core": "^1.2.3",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
     "lodash": "^4.17.10",
+    "mongodb": "^3.1.1",
     "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,5 +24,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001"
+  "main": "index.js",
+  "author": "CaptainCodeLLC"
 }
