@@ -17,14 +17,23 @@ export default class Contact extends Component {
             [e.target.name] : e.target.value
         })
     }
+    
     handleSubmit(e) {
         e.preventDefault();
 
         axios.post('/users', this.state)
             .then(res => console.log('Axios Response', res))
             .catch(err => console.log(err))
+            
+        this.setState({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          comments: ''
+        })
     }
-
+            
   render() {
     return (
       <div>
