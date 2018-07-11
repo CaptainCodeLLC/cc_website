@@ -38,7 +38,15 @@ class ModalExample extends React.Component {
       .then(res => console.log('Axios Solutions Modal Response', res))
       .catch(err => console.log(err))
     
-      this.toggle()
+    this.toggle()
+
+    this.setState({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      comments: ''
+    })
   }
 
   render() {
