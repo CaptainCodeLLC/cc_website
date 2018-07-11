@@ -32,7 +32,9 @@ app.get('/api/hello', (req, res) => {
   * INITIALIZE LOCAL
  ********************/
 require('./models/User');
+require('./models/Email');
 require('./routes/userRoutes')(app);
+require('./routes/emailRoutes')(app);
 
 /********************
   * START SERVER
