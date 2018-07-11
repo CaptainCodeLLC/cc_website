@@ -23,28 +23,22 @@ function SimpleMediaCard(props) {
   return (
     <div>
       <Card className={classes.card}>
+      <br/>
         <CardMedia
+          style ={{width:'57%', height:'90%', margin: 'auto'}}
           className={classes.media}
-          image=""
+          image= {props.iconlink}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2">
-            Lizard
+            {props.title}
           </Typography>
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {props.description}
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
+       
       </Card>
       <br/>
     </div>

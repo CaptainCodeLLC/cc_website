@@ -73,8 +73,10 @@ class Footer extends Component {
               onChange={e => this.handleChange(e)}
             >
           </Input>
+          
+          <Button id = "footer-submit" color="success" onClick={e => this.handleSubmit(e)}>Submit</Button>
+
           </Col>
-          <Button color="success" onClick={e => this.handleSubmit(e)}>Submit</Button>
         </Row>
         <br/>
         <Row>
