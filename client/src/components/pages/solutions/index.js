@@ -37,20 +37,20 @@ export default class Solutions extends Component {
             </Container>
           
           <div id = "business_subsection" >
-            <Container id = 'business_subsection' >
+            <Container id = 'business_subsection'  >
                 
             <h1 className="solution-header-text">Business Suite</h1> 
                 <Row>
                     <Col lg='4'>
-                        <VerticalCard title = "object1" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                        <VerticalCard imgSrc = "./icons/ingots.png"title = "Gold" subtitle = "A beautiful front facing site" description= "Front facing site with subsections that allows users to view your product/service and contact your businessy easily. Mobile" src = "http://via.placeholder.com/240x300" buttonLabel = "Gold Clients"pricing = {4.12}/>
                     </Col> 
                     
                     <Col lg='4'>
-                        <VerticalCard title = "object2" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                        <VerticalCard title = "Platinum" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
                     </Col>    
                     
                     <Col lg='4'>
-                        <VerticalCard title = "object3" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
+                        <VerticalCard title = "Diamond" subtitle = "Some information about the happy object" src = "http://via.placeholder.com/240x300" pricing = {4.12}/>
              
                     </Col>
                 </Row>
