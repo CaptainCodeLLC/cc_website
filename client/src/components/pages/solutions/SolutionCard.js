@@ -5,16 +5,16 @@ import { Card, CardText, CardBody, CardLink,
 const SolutionCard = (props) => {
   return (
     <div>
-      <Card>
+      <Card style = {{height:'550px'}}>
         <CardBody>
-          <CardTitle>Card title </CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardTitle>{props.title} </CardTitle>
+          <CardSubtitle>{props.subtitle}</CardSubtitle>
         </CardBody>
         <img width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Car cap" />
         <CardBody>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <CardLink href="#">Card Link</CardLink>
-          <CardLink href="#">Another Link</CardLink>
+          <CardText>{props.body}</CardText>
+          <CardLink href={props.demoLink}>Demo</CardLink>
+          <CardLink href={props.infoLink}>More information</CardLink>
         </CardBody>
       </Card>
     </div>

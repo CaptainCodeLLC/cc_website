@@ -8,8 +8,9 @@ export default class VerticalCard extends Component {
     return (
       <Container sm ='12' md = '4' lg = '4' >
         <Col>
-          <Card>
-            <CardImg top width="100%" src={this.props.imgSrc} alt="Card image cap" />
+          <Card style = {{maxHeight: '650px'}}>
+          <br/>
+            <CardImg top style = {{width:'80%', height:'80%', margin:'auto', }} src={this.props.imgSrc} alt="Card image cap" />
               <CardBody>
                 <CardTitle>{this.props.title}</CardTitle>
                 <CardSubtitle>{this.props.subtitle}</CardSubtitle>

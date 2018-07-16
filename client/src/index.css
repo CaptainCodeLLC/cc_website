@@ -104,12 +104,6 @@ h1#jumbotron-text{
 
   }
 
-  .content-subsection{
-    margin:auto;
-    margin-top:4vh;
-    margin-bottom:4vh;
-    width:60vw
-  }
 
   .solution-header-text{
     text-align: left;
@@ -118,10 +112,40 @@ h1#jumbotron-text{
   }
   #business_subsection{
     margin-top:20px;
-    background-color: #464644;;
-    width:98vw;
+    background-color: #464644;
+    padding-bottom:2%;
+  }
+  #education_subsection{
+    background-color: #30A64A;
+    padding-bottom:2%;
+  }
+  #education-header-text{
+    text-align: center;
+    color:white;
+    margin-top:1.5%;
+  }
+  #education-subtitle{
+    font-size:1rem;
+    color:white;
+  }
+  #home_subsection{
+    background-color:#464644;
+    padding-bottom:2%;
+    padding-top:1.5%;
+  }
+  #home-header-text{
+    color:white;
   }
 
+  #home-subtitle-text{
+    color:white;
+  }
+
+
+  #pricing_subsection{
+    margin-bottom:40px;
+    margin-top:40px;
+  }
   #products{
     display: flex;
     flex-direction: row;

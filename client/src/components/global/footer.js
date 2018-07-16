@@ -48,11 +48,25 @@ class Footer extends Component {
           </Col>
           <Col  className="footer-subgroup-outline" xs="6" md="3">
             <h1 className='header-text'>Press</h1>
-            <p className="description-text">Some info</p>
+            <a href = "/style_guide">
+              <p className="description-text"> 
+                Style guide
+              </p>
+            </a>
+            <a href="https://www.facebook.com/captaincodeservice/">
+              <p className="description-text">
+                Facebook
+              </p>
+            </a>
           </Col>
           <Col className="footer-subgroup-outline" xs="6" md="3">
             <h1 className="header-text">Careers</h1>
-            <p className="footer-nav-link">Some info</p>
+              <a href="/opportunities/">
+                <p className="description-text">Opportunities</p>
+              </a>
+              <a href="/opportunities/students">
+                <p className="description-text">Students</p>
+              </a>
           </Col>
         </Row>
         <br/>
