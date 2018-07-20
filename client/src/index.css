@@ -13,8 +13,8 @@ main{
 
 .landing-container{
   background: #52c234;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #569759ab, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #569759ab, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to left, #569759ab, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #569759ab, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .card-media{
   width:100%;
@@ -35,6 +35,8 @@ h1.grid-label{
   font-family: 'Raleway', sans-serif!important;
 }
 
+/* Landing */
+
 .jumbotron-container{
   background-color:transparent!important;
   margin-bottom:0!important;
@@ -43,6 +45,17 @@ h1.grid-label{
 #navbar-toggler{
   background-color:rgb(44, 44, 44,.88)!important;
 }
+
+#services-header{
+  font-size:2.8rem;
+  color:white;
+  text-shadow: 2px 2px #222222;
+}
+.services-subheader{
+  color:white;
+  font-size: 1.5rem!important;
+}
+
 
 .navbar-link{
   color: #f2f2f2!important;
@@ -62,6 +75,7 @@ h1#jumbotron-text{
   text-shadow: 3px 3.5px #000000;
 
 }
+
 
 /* General page layouts */
 .page-header{

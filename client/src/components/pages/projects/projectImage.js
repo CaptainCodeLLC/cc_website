@@ -7,10 +7,11 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {Badge} from 'reactstrap'
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 360,
   },
   media: {
     height: 0,
@@ -23,24 +24,30 @@ function SimpleMediaCard(props) {
   return (
     <div>
       <Card className={classes.card}>
-      <br/>
+      <a href={props.siteLink}>
         <CardMedia
-          style ={{width:'57%', height:'90%', margin: 'auto'}}
           className={classes.media}
-          image= {props.iconlink}
+          image={props.imgSrc}
           title="Contemplative Reptile"
         />
+      </a>
         <CardContent>
-          <Typography gutterBottom variant="headline" className = "services-subheader"component="p">
-            {props.title}
+          <Typography style ={{marginBottom:-10}} variant="headline" component="h1">
+            <a href={props.siteLink}>
+             {props.projectTitle}
+            </a>
           </Typography>
-          <Typography component="p">
-            {props.description}
-          </Typography>
+          
         </CardContent>
-       
+        <CardActions style = {{marginLeft:'10%'}}>
+          <Button size="small" color="primary">
+            Redesign
+          </Button>
+          <Button size="small" color="primary">
+            <Badge href={props.githubSrc} color="dimgrey">Github Repo</Badge>
+          </Button>
+        </CardActions>
       </Card>
-      <br/>
     </div>
   );
 }

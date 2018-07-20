@@ -3,7 +3,7 @@ import { Form, FormGroup, Jumbotron, Input, Button, Container } from 'reactstrap
 import axios from 'axios';
 
 import ProjectGrid from './projectGrid';
-
+import ServicesContainer from './servicesContainer';
 export default class Home extends Component {
   state = {
     email: ''
@@ -31,7 +31,6 @@ export default class Home extends Component {
     return (
       <div className="landing-container">
         <Container >
-      
           <Jumbotron className = "jumbotron-container">
             <h1 id= "jumbotron-text" className="display-2">Build. Teach. Inspire!</h1>
             <p className="lead">We build scalable and long-lasting software solutions focused on transparency and security. </p>
@@ -58,6 +57,8 @@ export default class Home extends Component {
                 </Button>
               </FormGroup>
             </Jumbotron>
+            <div><ServicesContainer/></div>
+            
         <ProjectGrid/>
       </Container>
       </div>
